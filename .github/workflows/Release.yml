@@ -54,7 +54,7 @@ jobs:
           delete-branch: true
           title: Release v${{ steps.gitversion.outputs.SemVer }}
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           name: v${{ steps.gitversion.outputs.SemVer }}
           tag_name: v${{ steps.gitversion.outputs.SemVer }}
